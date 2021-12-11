@@ -11,6 +11,7 @@
 		C1E3EFB9276453A6009E814C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3EFB8276453A6009E814C /* ContentView.swift */; };
 		C1E3EFBB276453A8009E814C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E3EFBA276453A8009E814C /* Assets.xcassets */; };
 		C1E3EFBE276453A8009E814C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E3EFBD276453A8009E814C /* Preview Assets.xcassets */; };
+		C1E3EFC627645458009E814C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3EFC527645458009E814C /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C1E3EFB8276453A6009E814C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1E3EFBA276453A8009E814C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E3EFBD276453A8009E814C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1E3EFC527645458009E814C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,8 @@
 		C1E3EFAA276453A6009E814C = {
 			isa = PBXGroup;
 			children = (
+				C1E3EFB6276453A6009E814C /* TurkishWordsFlashCardsApp.swift */,
+				C1E3EFC42764543C009E814C /* Model */,
 				C1E3EFB5276453A6009E814C /* TurkishWordsFlashCards */,
 				C1E3EFB4276453A6009E814C /* Products */,
 			);
@@ -51,7 +55,6 @@
 		C1E3EFB5276453A6009E814C /* TurkishWordsFlashCards */ = {
 			isa = PBXGroup;
 			children = (
-				C1E3EFB6276453A6009E814C /* TurkishWordsFlashCardsApp.swift */,
 				C1E3EFB8276453A6009E814C /* ContentView.swift */,
 				C1E3EFBA276453A8009E814C /* Assets.xcassets */,
 				C1E3EFBC276453A8009E814C /* Preview Content */,
@@ -65,6 +68,14 @@
 				C1E3EFBD276453A8009E814C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1E3EFC42764543C009E814C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1E3EFC527645458009E814C /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1E3EFB9276453A6009E814C /* ContentView.swift in Sources */,
+				C1E3EFC627645458009E814C /* Card.swift in Sources */,
 				C1E3EFB7276453A6009E814C /* TurkishWordsFlashCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
