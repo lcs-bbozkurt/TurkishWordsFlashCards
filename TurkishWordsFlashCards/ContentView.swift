@@ -14,6 +14,9 @@ struct ContentView: View {
     // It is randomly selected from the list of cards.
     @State var currentCard = listOfCards.randomElement()!
     
+    // This controls whether the meaning is visible
+    @State var isMeaningShowing = false
+    
     // MARK: Computed Properties
     var body: some View {
         ScrollView {
@@ -32,6 +35,8 @@ struct ContentView: View {
             Text(currentCard.meaning)
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
+            //          CONDITION          TRUE FALSE
+                .opacity(isMeaningShowing ? 1.0 : 0.0)
             
             // Show a new question
             Button(action: {
