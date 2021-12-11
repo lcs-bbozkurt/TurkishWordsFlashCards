@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored Properties
+    // Store the card to work with
+    // It is randomly selected from the list of cards.
+    var currentCard = listOfCards.randomElement()!
+    
+    // MARK: Computed Properties
     var body: some View {
         ScrollView {
             // Show question
-            Text("Merhaba!")
+            Text(currentCard.word)
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
             // Check answer
@@ -22,7 +29,7 @@ struct ContentView: View {
                 })
                 .buttonStyle(.bordered)
             // Show answer
-            Text("Hello!")
+            Text(currentCard.meaning)
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
             
