@@ -21,14 +21,26 @@ struct ContentView: View {
                 Text("Check")
                 })
                 .buttonStyle(.bordered)
-        }
+            // Show answer
+            Text("Hello!")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+            
+            // Show a new question
+            Button(action: {
+                // Hide the answer
+            }, label: {
+                Text("Antoher")
+        })
+                .buttonStyle(.bordered)
+    }
         .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
+
