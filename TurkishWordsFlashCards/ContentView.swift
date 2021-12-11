@@ -13,6 +13,7 @@ struct ContentView: View {
     // Store the card to work with
     // It is randomly selected from the list of cards.
     @State var currentCard = listOfCards.randomElement()!
+    @State var previousCard = listOfCards.randomElement()!
     
     // This controls whether the meaning is visible
     @State var isMeaningShowing = false
@@ -41,8 +42,12 @@ struct ContentView: View {
             
             // Show a new question
             Button(action: {
-                // Get another question
-                currentCard = listOfCards.randomElement()!
+                // Keep track of the previous Flash Card
+                previousCard = currentCard
+                
+                while previousCard == currentCard {
+                    currentCard = listOfCards.randomElement()!
+                }
                 // Hide the answer
                 isMeaningShowing = false
             }, label: {
